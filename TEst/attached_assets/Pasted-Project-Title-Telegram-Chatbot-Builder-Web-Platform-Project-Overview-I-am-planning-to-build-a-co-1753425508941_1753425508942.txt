@@ -1,0 +1,80 @@
+Project Title: Telegram Chatbot Builder Web Platform
+
+Project Overview:
+
+I am planning to build a complete web-based platform that allows users to create and manage their own Telegram chatbots without writing code. The core functionality is inspired by Telegram bots like @MenuBuilderBot, enabling users to define menu-based bots with custom replies.
+
+The website will be developed using HTML, CSS, JavaScript, and Core PHP (no backend frameworks). MySQL will be used as the database. The structure should be clean, modular, and well-organized, following best practices for file and code organization. While backend frameworks are avoided, you are free to use modern UI/UX libraries or frameworks (like Bootstrap, Tailwind CSS, or others) to give the interface a sleek, responsive, and user-friendly design.
+
+Key Features:
+
+User Authentication:
+
+Simple, secure Login/Register system using PHP sessions and hashed passwords.
+
+Forgot password / Reset password (optional, but recommended).
+
+User Dashboard:
+
+A central place for users to view, manage, or delete their bots.
+
+Option to add new Telegram bots.
+
+View status (active/inactive) and analytics like number of users interacting with the bot.
+
+Telegram Bot Integration:
+
+Users will provide their BotFather token and a custom name.
+
+Automatically setup the webhook and perform basic validation.
+
+After setup, redirect the user to a bot editor page.
+
+Bot Builder (Menu Editor):
+
+Graphical interface to define custom menus, commands, and responses.
+
+Create hierarchical menus like: Main Menu -> Sub Menu -> Final Response.
+
+Each button can trigger text, image, or multimedia reply.
+
+Backend stores this structure in a structured format in the database.
+
+Bot Customization Panel:
+
+Upload and manage:
+
+Bot profile picture.
+
+Bot description and about section.
+
+Additional info like category, language preferences, etc.
+
+Telegram Interaction API:
+
+Backend script to receive Telegram webhook events and respond based on user-defined menus.
+
+Secure communication with Telegram’s API using cURL and token authentication.
+
+Bonus Suggestions (for a more robust product):
+
+Activity Logs: Show last interaction logs with timestamps for each bot.
+
+Templates: Provide pre-made bot structures for quick deployment.
+
+Multilingual UI Support: Let users choose interface language (even Hindi, etc.).
+
+Dark Mode Toggle: Improve UX with light/dark theme switching.
+
+Bot Preview Tool: Simulate bot interaction on the website before deploying.
+
+Development Notes:
+
+All code must be written from scratch using core PHP—no Laravel, CodeIgniter, etc.
+
+UI can be enhanced using Bootstrap, TailwindCSS, FontAwesome, jQuery, etc.
+
+Ensure security best practices are followed: input validation, prepared statements, session handling.
+
+Database schema should be designed to allow future scalability (like supporting multiple bot types).
+
